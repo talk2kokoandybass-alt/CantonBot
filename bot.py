@@ -47,3 +47,4 @@ if __name__ == '__main__':
     print("Bot is starting (Light Mode)...")
     utils.executor.start_polling(dp, skip_updates=True)
     
+    
