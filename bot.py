@@ -29,7 +29,9 @@ async def start(message: types.Message):
         count = res.json()[0]['refs'] if res.json() else 0
 
     link = f"https://t.me/cantonclaim_bot?start={user_id}"
-    ad_url = f"https://adsgram.ai/api/v1/ad?blockId={ADS_ID}&userId={user_id}"
+    ADS_ID = "28626"
+ad_url = f"https://app.adsgram.ai/direct/{ADS_ID}?user_id={user_id}"
+
 
     await message.answer(
         f"🚀 **Canton ($CC) Priority Claim Assistant**\n\n"
